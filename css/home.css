@@ -1,0 +1,193 @@
+
+.container{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 61, 126);
+    color: white;
+
+}
+.nav .logo{
+    text-transform: uppercase;
+    padding: 0px 20px ;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
+.list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.list ul li{
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px 20px 0px 10px;
+   
+}
+.list ul li a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    height: 600px;
+    background-color: rgb(179, 82, 148);
+    position: relative;
+    
+    
+}
+header div{
+    position: absolute;
+    top: 30%;
+    right: 70px;
+    color: rgb(254, 252, 252);
+    
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    
+}
+header span{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom:15px;
+    font-size: 25px;
+}
+header button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: orange;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.services{
+    width: 70%;
+    margin: auto;
+    
+}
+.Whattodo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+.services h2{
+text-transform: capitalize;
+
+}
+.Whattodo .service{
+   text-align:  center;
+    margin: 0px;
+    width: 25%;
+}
+.Whattodo .service h3{
+    background-color: rgb(36, 36, 117);
+    padding: 30px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    margin: 0;
+}
+.Whattodo .service p{
+    padding: 0px 10px;
+    border-bottom: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+    border-color: blue;
+    height: 80px;
+}
+
+
+.aboutUs{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.aboutUs .text{
+    max-width: 500px;  
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    text-align: justify;
+
+}
+
+
+.aboutUs .image{
+    padding-top: 17px;
+}
+.text p span{
+    font-weight: 700;
+    font-size:16px ;
+}
+
+article h3{
+    text-transform: capitalize;
+    font-size: 30px;
+
+}
+article .text h4{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+
+
+/*media query*/
+@media screen and (max-width:768px){
+    .nav{
+        display: flex;
+        text-align: center;
+    }
+    header h1{
+        font-size: 30px;
+    }
+   
+    .list ul{
+        display: flex;
+       
+    }
+    .Whattodo  {
+        flex-direction: column; 
+
+    }
+    .Whattodo .service{
+        width: 90%;
+    }
+    .aboutUs{
+        flex-direction: column;
+    }
+    .image,.text{
+        width: 80%;
+    }
+   
+    
+
+}
