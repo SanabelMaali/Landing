@@ -1,4 +1,9 @@
 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 .container{
     width: 90%;
     margin: auto;
@@ -9,8 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(61, 61, 126);
-    color: white;
+    background-color: #3d3d7e;
+    color: #ffffff;
 
 }
 .nav .logo{
@@ -35,12 +40,12 @@
    
 }
 .list ul li a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 header{
     height: 600px;
-    background-color: rgb(179, 82, 148);
+    background-color: #b35294;
     position: relative;
     
     
@@ -49,7 +54,7 @@ header div{
     position: absolute;
     top: 30%;
     right: 70px;
-    color: rgb(254, 252, 252);
+    color: #fefcfc;
     
 }
 header h1{
@@ -69,7 +74,7 @@ header span{
 header button{
     border-radius: 10px;
     padding: 10px 30px;
-    background-color: orange;
+    background-color: #ffa500;
     text-transform: capitalize;
     color: black;
     font-weight: 700;
@@ -79,14 +84,18 @@ header button{
 
 
 .services{
-    width: 70%;
+    width: 80%;
     margin: auto;
     
 }
 .Whattodo{
-    display: flex;
+   /* display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10px;*/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+    gap: 5px;
     
 
 }
@@ -96,8 +105,7 @@ text-transform: capitalize;
 }
 .Whattodo .service{
    text-align:  center;
-    margin: 0px;
-    width: 25%;
+    margin: 0px; 
 }
 .Whattodo .service h3{
     background-color: rgb(36, 36, 117);
@@ -106,6 +114,7 @@ text-transform: capitalize;
     border-top-right-radius: 20px;
     color: white;
     margin: 0;
+    text-transform: capitalize;
 }
 .Whattodo .service p{
     padding: 0px 10px;
@@ -116,32 +125,39 @@ text-transform: capitalize;
     border-bottom-left-radius:20px ;
     border-color: blue;
     height: 80px;
+
+    
 }
 
 
 .aboutUs{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
     gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    grid-template-rows: auto;
     
     
     
 }
-
-.aboutUs .text{
-    max-width: 500px;  
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    white-space: normal; 
-    text-align: justify;
-
-}
-
 
 .aboutUs .image{
+    grid-row: span 2;
     padding-top: 17px;
+    max-width: 100%;
+   
+
 }
+.aboutUs .image img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.aboutUs .text{
+    grid-row:  1;
+}
+
+
+
 .text p span{
     font-weight: 700;
     font-size:16px ;
@@ -179,14 +195,21 @@ article .text h4{
 
     }
     .Whattodo .service{
-        width: 90%;
+        width: 100%;
     }
     .aboutUs{
         flex-direction: column;
     }
-    .image,.text{
-        width: 80%;
+
+    .image img{
+        display: block;
     }
+  
+
+
+    
+   
+    
    
     
 

@@ -39,15 +39,16 @@
    
 }
 .list ul li a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer{
     text-transform: capitalize;
     background-color: rgba(0, 0, 0, 0.822);
-    color: white;
-    padding: 20px;
+    color: #ffffff;
+    padding: 15px;
     text-align: center;
+    
     
 }
